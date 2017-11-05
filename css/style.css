@@ -322,6 +322,105 @@ textarea {
 }
 
 
+/*------------------------------------*\
+    #BENEFITS
+\*------------------------------------*/
+
+.benefits {
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.13px;
+  color: #ffffff;
+  background-color: #878c4c;
+  background-image: url("../img/background-benefits.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.benefits .container {
+  padding: 35px 20px 120px;
+  background-image: url("../img/background-benefits-2.png");
+  background-position: right 10px bottom;
+  background-size: 314px 535px;
+  background-repeat: no-repeat;
+}
+
+.benefits .wrapper {
+  display: flex;
+  margin-bottom: 82px;
+  border-bottom: 2px solid #c29f4d;
+}
+
+.benefits-title {
+  flex-shrink: 0;
+  width: 340px;
+  margin: 0;
+  margin-right: 50px;
+  padding: 10px 100px 16px 0;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #c29f4d;
+  border-right: 2px solid #c29f4d;
+}
+
+.benefits-lead {
+  flex-shrink: 1;
+  padding: 6px 0;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+
+.benefits p {
+  max-width: 700px;
+}
+
+.benefits-list-caption {
+  margin: 32px 0 21px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.benefits-list-caption span {
+  color: #c29f4d;
+}
+
+.benefits-list {
+  display: flex;
+  flex-flow: wrap column;
+  align-content: flex-start;
+  max-height: 90px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  list-style: none;
+}
+
+.benefits-list li {
+  position: relative;
+  margin-right: 35px;
+  padding-left: 27px;
+}
+
+.benefits-list li::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 15px;
+  border: 3px solid #c29f4d;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
 
 
 
@@ -337,11 +436,6 @@ textarea {
 
 
 
-
-
-
-
-
-/**, *::before, *::after {
+*, *::before, *::after {
   outline: none;
-}*/
+}
