@@ -1,0 +1,231 @@
+*, *::before, *::after {
+  outline: 1px dashed lightgrey;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  color: #8e8e8e;
+  background-color: #ffffff;
+}
+
+/*------------------------------------*\
+    #COMMON-ELEMENTS
+\*------------------------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline-color: #6bdd6b;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #d1aa50;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  box-shadow: none;
+}
+
+input {
+  width: 100%;
+  min-height: 40px;
+  margin-bottom: 8px;
+  padding: 10px;
+  font-size: 13px;
+  color: #1e1e1e;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 2px;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 2px;
+}
+
+
+/*------------------------------------*\
+    #COMMON-CLASSES
+\*------------------------------------*/
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 11px;
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 27px;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  letter-spacing: 0.75px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #1e1e1e;
+  border-radius: 2px;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #353535;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.header {
+  padding: 18px 0 25px;
+  color: #ffffff;
+  background-color: #878c4c;
+  background-image: url("../img/background-header.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 50px;
+  margin: 16px 0 90px;
+  padding: 0 110px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #c29f4d;
+  list-style: none;
+}
+
+.navigation li {
+  flex-grow: 1;
+}
+
+.navigation a {
+  display: block;
+  padding: 15px;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: -0.25px;
+}
+
+.navigation a:focus,
+.navigation a:hover {
+  background-color: #ffd062;
+}
+
+.navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.promo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.promo-photo {
+  margin-top: 40px;
+  margin-right: 45px;
+  margin-left: -35px;
+}
+
+.promo h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 34px;
+  letter-spacing: -0.25px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.promo span{
+  color: #ffd062;
+}
+
+.promo-order {
+  width: 376px;
+  padding: 19px 38px 25px;
+  background-color: #d1aa50;
+}
+
+.promo-order b {
+  display: block;
+  width: 100%;
+  margin-bottom: 23px;
+  padding-bottom: 14px;
+  font-weight: 800;
+  font-size: 32.7px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffffff;
+}
+
+.promo .button {
+  margin: 3px 0 10px;
+}
+
+.promo-no-spam {
+  position: relative;
+  margin: 0;
+  padding-left: 25px;
+  font-style: italic;
+  font-size: 8.5px;
+}
+
+.promo-no-spam::before {
+  content: url("../img/no-spam.png");
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 15px;
+  height: 16px;
+}
+
+/**, *::before, *::after {
+  outline: none;
+}*/
