@@ -109,6 +109,16 @@ textarea {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.button-yellow {
+  background-color: #c29f4d;
+  box-shadow: 4px 4px 0 rgba(230, 230, 230, 0.4);
+}
+
+.button-yellow:focus,
+.button-yellow:hover {
+  background-color: #ffd062;
+}
+
 .accented {
   font-weight: 600;
   font-size: 26px;
@@ -189,7 +199,7 @@ textarea {
   margin-left: -35px;
 }
 
-.promo h2 {
+.promo-title {
   margin: 0;
   margin-bottom: 30px;
   font-weight: 800;
@@ -538,27 +548,16 @@ textarea {
   letter-spacing: -1px;
 }
 
-.slogan a {
-  display: block;
-  weight: 300px;
+.slogan .button {
+  width: 300px;
   padding: 13px 48px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1;
   text-align: center;
+  text-transform: none;
   letter-spacing: -0.5px;
   color: #ffffff;
-  background-color: #c29f4d;
-  border-radius: 2px;
-}
-
-.slogan a:focus,
-.slogan a:hover {
-  background-color: #ffd062;
-}
-
-.slogan a:active {
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .slogan span {
@@ -638,6 +637,112 @@ textarea {
 .slider #slide-2:checked ~ .slider-item-2,
 .slider #slide-3:checked ~ .slider-item-3 {
   display: flex;
+}
+
+
+/*------------------------------------*\
+    #SECONR-PROMO
+\*------------------------------------*/
+
+.second-promo {
+  color: #ffffff;
+  background-color: #878c4c;
+  background-image: url("../img/background-second-promo.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: 600;
+}
+
+.second-promo .container {
+  position: relative;
+  padding: 115px 530px 115px 20px;
+}
+
+.second-promo-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 32.7px;
+  letter-spacing: -0.9px;
+  text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.second-promo-title span {
+  color: #ffd062;
+}
+
+.second-promo p {
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.second-promo-list {
+  margin: 0;
+  margin-bottom: 32px;
+  margin-left: 32px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 22px;
+  list-style: none;
+}
+
+.second-promo-list li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.second-promo-list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #c29f4d;
+  border-radius: 50%;
+}
+
+.second-promo .button {
+  width: 200px;
+  margin: 0 6px 20px;
+  padding: 5px 0;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  text-transform: none;
+}
+
+.second-promo-photo {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+}
+
+.second-promo-label {
+  position: absolute;
+  right: 270px;
+  bottom: 58px;
+  width: 144px;
+  height: 144px;
+  padding-top: 45px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+}
+
+.second-promo-label b {
+  font-weight: 800;
+  font-size: 34px;
+}
+
+.second-promo-label sup {
+  font-weight: 400;
+  font-size: 24px;
 }
 
 
