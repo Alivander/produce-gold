@@ -32,11 +32,13 @@ img {
 a {
   color: #d1aa50;
   text-decoration: none;
+  transition-duration: 0.25s;
 }
 
 button {
   border: none;
   box-shadow: none;
+  transition-duration: 0.25s;
 }
 
 input,
@@ -154,6 +156,7 @@ textarea {
   color: #ffffff;
   background-color: #c29f4d;
   list-style: none;
+  box-shadow: 4px 4px 0 rgba(230, 230, 230, 0.4);
 }
 
 .navigation li {
@@ -626,6 +629,12 @@ textarea {
   opacity: 1;
 }
 
+.slider #slide-1:focus ~ .slider-control label[for="slide-1"],
+.slider #slide-2:focus ~ .slider-control label[for="slide-2"],
+.slider #slide-3:focus ~ .slider-control label[for="slide-3"] {
+  outline: 1px solid #6bdd6b;
+}
+
 .slider #slide-1:checked ~ .slider-item-1,
 .slider #slide-2:checked ~ .slider-item-2,
 .slider #slide-3:checked ~ .slider-item-3 {
@@ -877,6 +886,7 @@ textarea {
   min-height: 54px;
   margin-bottom: 10px;
   font-size: 30px;
+  line-height: 1;
 }
 
 
