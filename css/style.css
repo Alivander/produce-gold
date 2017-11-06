@@ -514,6 +514,132 @@ textarea {
 }
 
 
+/*------------------------------------*\
+    #SLOGAN
+\*------------------------------------*/
+
+.slogan {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.slogan .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 115px;
+}
+.slogan p {
+  margin: 0;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.slogan a {
+  display: block;
+  weight: 300px;
+  padding: 13px 48px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  background-color: #c29f4d;
+  border-radius: 2px;
+}
+
+.slogan a:focus,
+.slogan a:hover {
+  background-color: #ffd062;
+}
+
+.slogan a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.slogan span {
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/*------------------------------------*\
+    #SLIDER
+\*------------------------------------*/
+
+.slider {
+  display: flex;
+  flex-flow: nowrap column-reverse;
+  padding: 110px 20px 30px;
+}
+
+.slider-item {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 143px;
+  font-weight: 700;
+}
+
+.slider-item .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.slider-item img {
+  margin-right: 25px;
+}
+
+.slider-item blockquote {
+  width: 290px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.slider-item cite {
+  font-style: normal;
+  font-size: 14px;
+  color: #c29f4d;
+}
+
+.slider-control {
+  display: flex;
+  justify-content: center;
+  margin: 55px 0;
+}
+
+.slider label {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #c29f4d;
+  background-clip: content-box;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition-duration: 0.25s;
+}
+
+.slider #slide-1:checked ~ .slider-control label[for="slide-1"],
+.slider #slide-2:checked ~ .slider-control label[for="slide-2"],
+.slider #slide-3:checked ~ .slider-control label[for="slide-3"] {
+  opacity: 1;
+}
+
+.slider #slide-1:checked ~ .slider-item-1,
+.slider #slide-2:checked ~ .slider-item-2,
+.slider #slide-3:checked ~ .slider-item-3 {
+  display: flex;
+}
+
 
 
 
