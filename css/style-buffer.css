@@ -1,3 +1,109 @@
 /*------------------------------------*\
-    #SECONR-PROMO
+    #PAYMENT
 \*------------------------------------*/
+
+.payment-wrapper {
+  display: flex;
+  background-color: #e7e7e7;
+}
+
+.payment {
+  flex-grow: 1;
+}
+
+.payment .container {
+  width: 537px;
+  margin-right: 0;
+  margin-left: auto;
+  padding-right: 19px;
+  padding-left: 18px;
+}
+
+.payment-top {
+  padding-top: 60px;
+  padding-bottom: 35px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.payment-top p {
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 9px;
+  padding-left: 88px;
+}
+
+.payment-top p::before {
+  content: url("../img/message.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 76px;
+  height: 64px;
+}
+
+.payment-middle {
+  color: #ffffff;
+  background-color: #1e1e1e;
+}
+
+.payment-middle .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.payment-middle h3 {
+  margin: 0;
+  margin-bottom: 18px;
+  padding-bottom: 13px;
+  font-weight: 600;
+  font-size: 12px;
+  border-bottom: 2px solid #545454;
+}
+
+.payment-middle-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.payment-bottom {
+  padding-top: 28px;
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.payment-bottom h3 {
+  margin: 0;
+  margin-bottom: 13px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  border-bottom: 1px solid #545454;
+}
+
+.payment-bottom p {
+  margin: 0;
+  margin-bottom: 10px;
+  letter-spacing: 0.25px;
+}
+
+/*------------------------------------*\
+    #CONTACT
+\*------------------------------------*/
+
+.contact {
+  flex-grow: 1;
+  background-color: #d1aa50;
+}
+
+.contact .container {
+  width: 414px;
+  margin-right: auto;
+  margin-left: 0;
+  padding: 0 44px;
+}
