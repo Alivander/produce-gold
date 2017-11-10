@@ -568,6 +568,34 @@ textarea {
     #SLIDER
 \*------------------------------------*/
 
+@keyframes slide-animation {
+  from {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
 .slider {
   display: flex;
   flex-flow: nowrap column-reverse;
@@ -623,22 +651,24 @@ textarea {
   transition-duration: 0.25s;
 }
 
+.slider label:hover {
+  transform: scale(1.2);
+  outline: none;
+}
+
 .slider #slide-1:checked ~ .slider-control label[for="slide-1"],
 .slider #slide-2:checked ~ .slider-control label[for="slide-2"],
 .slider #slide-3:checked ~ .slider-control label[for="slide-3"] {
   opacity: 1;
 }
 
-.slider #slide-1:focus ~ .slider-control label[for="slide-1"],
-.slider #slide-2:focus ~ .slider-control label[for="slide-2"],
-.slider #slide-3:focus ~ .slider-control label[for="slide-3"] {
-  outline: 1px solid #6bdd6b;
-}
-
 .slider #slide-1:checked ~ .slider-item-1,
 .slider #slide-2:checked ~ .slider-item-2,
 .slider #slide-3:checked ~ .slider-item-3 {
   display: flex;
+  animation-name: slide-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 
